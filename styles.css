@@ -1,0 +1,240 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: rgb(20, 21, 19);
+    background: linear-gradient(135deg, rgb(9, 13, 15) 23%, rgb(51, 55, 56) 100%); 
+    
+
+    
+}
+.logo{
+    width: 950px;
+    margin: 0 0 auto;    
+}
+
+.logo img{
+    width: 100px;
+
+}
+
+.ingresarT{
+    width: 950px;
+    margin: 0 80px auto;
+    margin-bottom: 60px;
+    
+}
+
+.ingresarT textarea{ 
+     
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+    background-color:rgba(0, 0, 0, 0) ;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+}
+
+.desencriptado{
+    position: absolute;
+    width: 300px; 
+    height: 90%;   
+    left: 70%;
+    top: 40px;
+    text-align: center;
+    background: rgb(232, 232, 192);
+    box-shadow: 8px 24px 32px 8px rgba(72, 179, 14, 0.551);
+    border-radius: 32px;
+
+}
+.desencriptado img{ 
+    margin-top: 80px;
+    width: 300px;
+
+}
+#botonCopiar{ 
+    width:50%;
+    height: 5%;
+    left:20%;
+    display: block;    
+    position:relative;
+    bottom: 15px;
+    background:darkgreen;
+    border:none;
+    border-Radius:2px;
+    color:white;
+    box-Shadow:3px 3px 3px rgb(16, 14, 12);
+}
+
+.desencriptado h1{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.desencriptado p{
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.botones{
+    width: 950px;
+    margin-left:150px;
+    margin-top: auto;    
+    bottom: 70px; 
+    position: absolute;
+    
+   
+    
+}
+.botones p{
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffff;
+    padding-bottom: 15px;
+
+}
+
+
+.botones p::before{
+    content:"🚨";
+
+}
+
+.encrip{
+    background: #31820C;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius:5px ;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    margin-right: 15px;
+    box-shadow: 6px 6px 6px rgb(16, 14, 12);
+
+}
+
+.encrip:hover{
+    cursor: pointer;
+    background: rgb(19, 136, 99);
+    transition: 500ms;
+}
+
+.desen{
+    background: #dcdddb;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(33, 62, 9);
+    border-radius:5px ;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    box-shadow: 6px 6px 6px rgb(16, 14, 12);
+    
+
+}
+.desen:hover{
+    cursor: pointer;
+    background: rgb(5, 31, 23);
+    transition: 500ms;
+    color: seashell;
+}
+/*responsive*/
+@media (max-width:880px){
+    body{
+        
+        min-height: 70vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        background: rgb(20, 21, 19);
+         
+        
+    
+        
+    }
+    .logo{
+        width: 90%;
+            
+    }
+
+    .ingresarT{
+        width: 80%;     
+        
+    }
+
+    .ingresarT textarea{ 
+        width: 70%;
+        height: 70%;
+
+    }
+    
+    .botones{
+        width: 90%;
+        margin-left:10px;
+        margin-top: 30%;    
+        margin-bottom: 10px; 
+        position: relative;
+        text-align: center;     
+       
+        
+    }
+    .encrip{
+        
+        width: 100px;
+        height: 50px;       
+    
+    }
+    .desen{        
+        width: 100px;
+        height: 50px;      
+    
+    }
+   
+    .desencriptado{
+        position:relative;
+        width: 80%; 
+        height: auto;   
+        left:10%;
+        
+        top: 10px;
+        text-align: center;
+        background: rgb(232, 232, 192);
+        box-shadow: 8px 8px 8px 8px rgba(72, 179, 14, 0.551);
+        border-radius: 32px;    
+    }
+    .desencriptado h1{
+        font-size: 12px;
+        padding-bottom: 1px;
+        padding-top: 3px;
+        
+    }
+    #botonCopiar{ 
+        width:30%;
+        height: 5%;
+        left:35%;
+        display: block;    
+        position:relative;
+        bottom: 15px;
+        background:darkgreen;
+        border:none;
+        border-Radius:2px;
+        color:white;
+        box-Shadow:3px 3px 3px rgb(16, 14, 12);
+    }
+   
+    .desencriptado p{
+        font-size: 8px;
+        position:relative;
+        width:100% ;        
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .desencriptado img{
+        visibility: hidden;
+        display: none;
+
+    }
+
+}/*ver el video de responsive para hacer esta parte faltan detalles*/
+
