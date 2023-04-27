@@ -74,7 +74,7 @@ function desencriptarTexto() {
   if (texto===""){
     alert("el campo esta vacio")
     return false; }
-  var pattern= new RegExp('^[a-z ]+$');
+  var pattern= new RegExp('^[a-z-ñ,. ]+$');
   if (!pattern.test(texto)) {
       alert("solo se permiten letras minusculas")
       return false;     
